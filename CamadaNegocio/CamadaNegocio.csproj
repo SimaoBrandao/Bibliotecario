@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADCBCAB9-7F47-4C68-A1DD-7F6C03A9CF96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CamadaNegocio</RootNamespace>
+    <AssemblyName>CamadaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackupCamadaNegocio.cs" />
+    <Compile Include="CategoriaCamadaNegocio.cs" />
+    <Compile Include="ClienteCamadaNegocio.cs" />
+    <Compile Include="FormatoCamadaNegocio.cs" />
+    <Compile Include="EmprestimoCamadaNegocio.cs" />
+    <Compile Include="IBackupCamadaNegocio.cs" />
+    <Compile Include="ICategoriaCamadaNegocio.cs" />
+    <Compile Include="IClienteCamadaNegocio.cs" />
+    <Compile Include="IFormatoCamadaNegocio.cs" />
+    <Compile Include="IEmprestimoCamadaNegocio.cs" />
+    <Compile Include="IAcervoCamadaNegocio.cs" />
+    <Compile Include="BibliotecaCamadaNegocio.cs" />
+    <Compile Include="IBibliotecaCamadaNegocio.cs" />
+    <Compile Include="IModalidadeCamadaNegocio.cs" />
+    <Compile Include="IPerfilCamadaNegocio.cs" />
+    <Compile Include="IUtilizadorCamadaNegocio.cs" />
+    <Compile Include="AcervoCamadaNegocio.cs" />
+    <Compile Include="ModalidadeCamadaNegocio.cs" />
+    <Compile Include="PerfilCamadaNegocio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClienteSMTP.cs" />
+    <Compile Include="UtilizadorCamadaNegocio.cs" />
+    <Compile Include="ValidacaoCamadaNegocio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{1a92f505-cfae-4252-8d50-00dab3f99371}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaEntidade\CamadaEntidade.csproj">
+      <Project>{28e48b6c-1adc-4169-b5be-ce3d2f40e1eb}</Project>
+      <Name>CamadaEntidade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

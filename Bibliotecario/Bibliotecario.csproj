@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6454D7C7-7D99-4C94-BA0D-D0C62D310DBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bibliotecario</RootNamespace>
+    <AssemblyName>Bibliotecario</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="FormAdicionarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarCategoria.Designer.cs">
+      <DependentUpon>FormAdicionarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarCliente.designer.cs">
+      <DependentUpon>FormAdicionarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarFormato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarFormato.Designer.cs">
+      <DependentUpon>FormAdicionarFormato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackup.Designer.cs">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmprestimo.Designer.cs">
+      <DependentUpon>FormEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarModalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarModalidade.Designer.cs">
+      <DependentUpon>FormAdicionarModalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarModalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarModalidade.Designer.cs">
+      <DependentUpon>FormAlterarModalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarSenhaAposLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarSenhaAposLogin.Designer.cs">
+      <DependentUpon>FormAlterarSenhaAposLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarModalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarModalidade.Designer.cs">
+      <DependentUpon>FormConsultarModalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBiblioteca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBiblioteca.designer.cs">
+      <DependentUpon>FormBiblioteca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovaContaUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovaContaUtilizador.designer.cs">
+      <DependentUpon>FormNovaContaUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarAcervo.Designer.cs">
+      <DependentUpon>FormAdicionarAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarReservaAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarReservaAcervo.Designer.cs">
+      <DependentUpon>FormAdicionarReservaAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarUtilizador.designer.cs">
+      <DependentUpon>FormAdicionarUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarCategoria.Designer.cs">
+      <DependentUpon>FormAlterarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarCliente.designer.cs">
+      <DependentUpon>FormAlterarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarFormato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarFormato.Designer.cs">
+      <DependentUpon>FormAlterarFormato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarAcervo.Designer.cs">
+      <DependentUpon>FormAlterarAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarReservaAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarReservaAcervo.Designer.cs">
+      <DependentUpon>FormAlterarReservaAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarSenha.designer.cs">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarUtilizador.designer.cs">
+      <DependentUpon>FormAlterarUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarCategoria.Designer.cs">
+      <DependentUpon>FormConsultarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarCliente.designer.cs">
+      <DependentUpon>FormConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarFormato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarFormato.Designer.cs">
+      <DependentUpon>FormConsultarFormato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarEmprestimo.Designer.cs">
+      <DependentUpon>FormConsultarEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarAcervo.Designer.cs">
+      <DependentUpon>FormConsultarAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarReserva.Designer.cs">
+      <DependentUpon>FormConsultarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarUtilizador.designer.cs">
+      <DependentUpon>FormConsultarUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolucao.Designer.cs">
+      <DependentUpon>FormDevolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalizarAcervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalizarAcervo.Designer.cs">
+      <DependentUpon>FormLocalizarAcervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalizarCliente.Designer.cs">
+      <DependentUpon>FormLocalizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMinhaConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMinhaConta.designer.cs">
+      <DependentUpon>FormMinhaConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRedefinirSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRedefinirSenha.Designer.cs">
+      <DependentUpon>FormRedefinirSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRestore.Designer.cs">
+      <DependentUpon>FormRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServidorDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServidorDados.designer.cs">
+      <DependentUpon>FormServidorDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdicionarCategoria.resx">
+      <DependentUpon>FormAdicionarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarCliente.resx">
+      <DependentUpon>FormAdicionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarFormato.resx">
+      <DependentUpon>FormAdicionarFormato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackup.resx">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmprestimo.resx">
+      <DependentUpon>FormEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarModalidade.resx">
+      <DependentUpon>FormAdicionarModalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarModalidade.resx">
+      <DependentUpon>FormAlterarModalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarSenhaAposLogin.resx">
+      <DependentUpon>FormAlterarSenhaAposLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarUtilizador.resx">
+      <DependentUpon>FormAlterarUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarModalidade.resx">
+      <DependentUpon>FormConsultarModalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBiblioteca.resx">
+      <DependentUpon>FormBiblioteca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovaContaUtilizador.resx">
+      <DependentUpon>FormNovaContaUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarAcervo.resx">
+      <DependentUpon>FormAdicionarAcervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarUtilizador.resx">
+      <DependentUpon>FormAdicionarUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarCategoria.resx">
+      <DependentUpon>FormAlterarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarCliente.resx">
+      <DependentUpon>FormAlterarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarFormato.resx">
+      <DependentUpon>FormAlterarFormato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarAcervo.resx">
+      <DependentUpon>FormAlterarAcervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarSenha.resx">
+      <DependentUpon>FormAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarCategoria.resx">
+      <DependentUpon>FormConsultarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarCliente.resx">
+      <DependentUpon>FormConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarFormato.resx">
+      <DependentUpon>FormConsultarFormato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarEmprestimo.resx">
+      <DependentUpon>FormConsultarEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarAcervo.resx">
+      <DependentUpon>FormConsultarAcervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarReserva.resx">
+      <DependentUpon>FormConsultarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarUtilizador.resx">
+      <DependentUpon>FormConsultarUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevolucao.resx">
+      <DependentUpon>FormDevolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalizarAcervo.resx">
+      <DependentUpon>FormLocalizarAcervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalizarCliente.resx">
+      <DependentUpon>FormLocalizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMinhaConta.resx">
+      <DependentUpon>FormMinhaConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRedefinirSenha.resx">
+      <DependentUpon>FormRedefinirSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRestore.resx">
+      <DependentUpon>FormRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServidorDados.resx">
+      <DependentUpon>FormServidorDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="no_picture.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaEntidade\CamadaEntidade.csproj">
+      <Project>{28e48b6c-1adc-4169-b5be-ce3d2f40e1eb}</Project>
+      <Name>CamadaEntidade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{adcbcab9-7f47-4c68-a1dd-7f6c03a9cf96}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
