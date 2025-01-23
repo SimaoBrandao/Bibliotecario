@@ -1,0 +1,246 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\Bibliotecario\\Bibliotecario.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\Bibliotecario\\Bibliotecario.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\Bibliotecario\\Bibliotecario.csproj",
+        "projectName": "Bibliotecario",
+        "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\Bibliotecario\\Bibliotecario.csproj",
+        "packagesPath": "C:\\Users\\Brandão\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\Bibliotecario\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brandão\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Brandão\\Documents\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj": {
+                "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj"
+              },
+              "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\CamadaNegocio.csproj": {
+                "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\CamadaNegocio.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\CamadaDados.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\CamadaDados.csproj",
+        "projectName": "CamadaDados",
+        "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\CamadaDados.csproj",
+        "packagesPath": "C:\\Users\\Brandão\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brandão\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Brandão\\Documents\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj": {
+                "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            },
+            "MySql.Data.NET40": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj",
+        "projectName": "CamadaEntidade",
+        "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj",
+        "packagesPath": "C:\\Users\\Brandão\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brandão\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Brandão\\Documents\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\CamadaNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\CamadaNegocio.csproj",
+        "projectName": "CamadaNegocio",
+        "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\CamadaNegocio.csproj",
+        "packagesPath": "C:\\Users\\Brandão\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Brandão\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Brandão\\Documents\\Nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\CamadaDados.csproj": {
+                "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaDados\\CamadaDados.csproj"
+              },
+              "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj": {
+                "projectPath": "C:\\Users\\Brandão\\Desktop\\Bibliotecario\\CamadaEntidade\\CamadaEntidade.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
